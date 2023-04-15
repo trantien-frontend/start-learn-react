@@ -16,8 +16,10 @@ function InputField(props) {
 
   const { formState, errors } = form;
 
-  console.log('formState: ', formState);
-  console.log('errors: ', errors);
+  const hasErros = formState.touched[name] && errors[name];
+
+  console.log('formState: ', formState.touched[name]);
+  console.log('errors: ', errors[name]);
 
   return (
     <Controller
