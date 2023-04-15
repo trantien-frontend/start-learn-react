@@ -10,9 +10,9 @@ function App() {
       <Header />
 
       <Switch>
+        <Route path='/' component={CounterFeature} exact />
         <Route path='/todos' component={TodoRoute} />
         <Route path='/albums' component={AlbumFeature} />
-        <Route path='/' component={CounterFeature} />
       </Switch>
     </div>
   );

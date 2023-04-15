@@ -14,18 +14,19 @@ InputField.propTypes = {
 function InputField(props) {
   const { name, form, label, disabled } = props;
 
-  console.log(name);
+  const { formState, errors } = form;
+
+  console.log('formState: ', formState);
+  console.log('errors: ', errors);
 
   return (
     <Controller
+      as={TextField}
       name={name}
       fullWidth
       control={form.control}
       label={label}
       variant='outlined'
-      render={({ field: { onChange, value } }) => {
-        onChange = { onChange };
-      }}
     />
   );
 }
