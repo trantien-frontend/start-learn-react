@@ -1,0 +1,11 @@
+.todolist {
+  & li {
+    cursor: pointer;
+  }
+
+  & li.completed {
+    color: rgba(254, 254, 254, 0.104);
+    font-style: italic;
+    text-decoration: line-through;
+  }
+}

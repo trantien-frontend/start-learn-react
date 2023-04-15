@@ -1,0 +1,9 @@
+.hobby-list {
+  & li {
+    transition: 0.3s all;
+    cursor: pointer;
+  }
+  & li.active {
+    color: black;
+  }
+}

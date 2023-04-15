@@ -1,0 +1,8 @@
+.color-box {
+  $box-size: 200px;
+
+  width: $box-size;
+  height: $box-size;
+
+  transition: 0.35s ease-in-out;
+}
